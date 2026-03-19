@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Sistema de archivos. | BIAC_2 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="@ljcortezo" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+<body class="exe-web-site" id="exe-node-22"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">BIAC_2</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="tema.html" class="no-ch">Tema</a></li>
+   <li><a href="inicio.html" class="no-ch">Inicio</a></li>
+   <li class="current-page-parent"><a href="desarrollo.html" class="current-page-parent daddy">Desarrollo</a>
+   <ul>
+      <li><a href="disco_duro_estructura_fsica_y_lgica.html" class="no-ch">Disco duro (estructura física y lógica).</a></li>
+      <li><a href="funcionamiento_de_una_unidad_de_disco_duro.html" class="no-ch">Funcionamiento de una unidad de disco duro.</a></li>
+      <li><a href="qu_es_una_particin_de_disco_duro.html" class="no-ch">Qué es una partición de disco duro.</a></li>
+      <li><a href="estructura_fsica_y_lgica_de_un_disco.html" class="no-ch">Estructura física y lógica de un disco.</a></li>
+      <li><a href="particiones.html" class="no-ch">Particiones.</a></li>
+      <li><a href="tipos_de_particiones.html" class="no-ch">Tipos de particiones.</a></li>
+      <li><a href="formato_fsico_formato_de_bajo_nivel.html" class="no-ch">Formato físico (Formato de Bajo Nivel).</a></li>
+      <li><a href="particionado_de_disco_divisin_fsica_y_lgica.html" class="no-ch">Particionado de disco (división física y lógica)</a></li>
+      <li><a href="formato_lgico_formato_de_alto_nivel.html" class="no-ch">Formato lógico (Formato de Alto Nivel)</a></li>
+      <li><a href="existen_tres_tipos_de_particiones_las_primarias_las_extendidas_o_secundarias_y_las_lgicas.html" class="no-ch">Existen tres tipos de particiones, las primarias, las extendidas o secundarias, y las lógicas.</a></li>
+      <li><a href="particiones_primarias_y_particiones_lgicas.html" class="no-ch">Particiones primarias y particiones lógicas.</a></li>
+      <li><a href="parmetros_ms_importantes_de_un_disco_duro.html" class="no-ch">Parámetros más importantes de un disco duro.</a></li>
+      <li><a href="caractersticas_de_un_disco_duro_conceptos_de_definicin_de_un_dd.html" class="no-ch">Características de un disco duro (conceptos de definición de un DD)</a></li>
+      <li><a href="modos_de_transferencia_de_un_dd.html" class="no-ch">Modos de transferencia de un DD.</a></li>
+      <li><a href="factores_de_rendimiento_de_un_disco_duro.html" class="no-ch">Factores de rendimiento de un disco duro.</a></li>
+      <li><a href="sistemas_de_direccionamiento_que_se_utilizan_los_discos_duros.html" class="no-ch">Sistemas de direccionamiento que se utilizan los discos duros</a></li>
+      <li id="active"><a href="sistema_de_archivos.html" class="active no-ch">Sistema de archivos.</a></li>
+      <li><a href="almacenamiento_y_recuperacin_de_datos.html" class="no-ch">Almacenamiento y recuperación de datos.</a></li>
+      <li><a href="almacenamiento_de_archivo_en_disco.html" class="no-ch">Almacenamiento de archivo en disco.</a></li>
+      <li><a href="operacin_de_lecturaescritura.html" class="no-ch">Operación de lectura/escritura.</a></li>
+      <li><a href="interfaces.html" class="no-ch">Interfaces</a></li>
+      <li><a href="tipos_de_interfaz_interna_e_externa.html" class="no-ch">Tipos de interfaz (interna e externa).</a></li>
+   </ul>
+   </li>
+   <li><a href="cierre.html" class="no-ch">Cierre</a></li>
+   <li><a href="bibliografa.html" class="no-ch">Bibliografía</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="sistemas_de_direccionamiento_que_se_utilizan_los_discos_duros.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="almacenamiento_y_recuperacin_de_datos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Sistema de archivos.</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id18">
+<div class="iDevice emphasis0" >
+<div id="ta18_144_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;"><strong>Sistema de archivos.</strong></p>
+<p style="text-align: justify;">Un sistema de archivos es una estructura que permite tanto el almacenamiento de información en una partición como su modificación y recuperación. Para que sea posible trabajar en una partición es necesario asignarle previamente un sistema de archivos. Esta operación se denomina dar formato a una partición.</p>
+<p style="text-align: justify;">Generalmente cada sistema de archivos ha sido diseñado para obtener el mejor rendimiento con un sistema operativo concreto (FAT para DOS, FAT32 para Windows 98, NTFS para Windows NT, HPFS para OS/2…).  Sin embargo, es usual que el mismo sistema operativo sea capaz de reconocer múltiples sistemas de archivos.</p>
+<p style="text-align: justify;">Todos los sistemas de archivos consisten en estructuras necesarias para almacenar y manejar datos, estas estructuras normalmente incluyen un registro de arranque del SO, archivos, directorios y un sistema de archivos desempeña tres funciones principales:</p>
+<ul style="text-align: justify;">
+<li>Control de espacio disponible, asignado, dañado</li>
+<li>Mantenimiento de directorios, archivos.</li>
+<li>Control del lugar donde las distintas porciones de cada archivo se encuentran físicamente almacenadas en el disco. Hoy día existen varios sistemas de archivos en uso. Distintos sistemas de archivos pueden ser usados (reconocidos) por diferentes sistemas operativos. Algunos sistemas operativos sólo pueden reconocer un sistema de archivos, otros pueden reconocer varios sistemas de archivos diferentes. Algunos de los sistemas de archivos más comunes son los que se detallan a continuación:</li>
+</ul>
+<p style="text-align: justify;"><strong><span style="font-size: 1.05em;">FAT (File Allocate Table, tabla de asignación de archivos)</span></strong></p>
+<p style="text-align: justify;">Este sistema de archivos se basa, como su nombre indica, en una tabla de asignación de archivos o FAT. Esta tabla es el índice del disco, es el TOC (tabla de contenidos). Almacena los grupos utilizados por cada archivo, los grupos libres y los defectuosos.  Como consecuencia de la fragmentación de archivos, es corriente que los distintos grupos que contienen un archivo se hallen desperdigados por toda la partición. La FAT es la encargada de seguir el rastro de cada uno de los archivos por la partición.</p>
+<p style="text-align: justify;">Clúster, Grupo o unidad de asignación es la unidad mínima de almacenamiento de un archivo en una partición y está formada por uno o varios sectores contiguos del disco. Esto quiere decir que el espacio real ocupado por un archivo en disco será siempre múltiplo del tamaño del grupo. Además, cada grupo puede almacenar información de un solo archivo. Si no cabe en un solo grupo, se utilizarán varios (no necesariamente contiguos).</p>
+<p style="text-align: justify;"><strong><em>1 clúster es el mínimo espacio</em></strong> usado para cualquier lectura o escritura. Por esta causa es frecuente que quede mucho espacio perdido (slack space), no usado a continuación del clúster de datos almacenado allí. </p>
+<p style="text-align: justify;">Para hacernos una idea del nefasto resultado de un tamaño de grupo incorrecto, consideremos dos archivos de 1 byte cada uno. Si el tamaño del grupo es de 32 KB, se utilizarán dos grupos y el espacio real ocupado en disco habrá sido de 64</p>
+<p style="text-align: justify;">KB = ¡65.536 bytes! en vez de 2 bytes, como sería de esperar.</p>
+<p style="text-align: justify;">Este sistema posee importantes limitaciones: nombres de archivos cortos; tamaño máximo de particiones de 2 GB; grupos (clústeres) demasiados grades, con el consiguiente desaprovechamiento de espacio en disco; elevada fragmentación, que ralentiza el acceso a los archivos. Pero tiene a su favor su sencillez y compatibilidad con la mayoría de sistemas operativos. Debido a que la FAT de este sistema de archivos tiene entradas de 16 bits (por eso, a veces se</p>
+<p style="text-align: justify;">llama FAT16), sólo se pueden utilizar 216 = 65.536 grupos distintos. Esto implica que, con el fin de aprovechar la totalidad del espacio de una partición, los grupos tengan tamaños distintos en</p>
+<p style="text-align: justify;">función del tamaño de la partición. Por ejemplo, con un grupo de 16 KB se puede almacenar hasta</p>
+<p style="text-align: justify;">216 grupos * 16 KB/grupo = 220 KB = 1 GB de información. El límite de la partición (2 GB) se obtiene al considerar un grupo máximo de 32 KB (formado por 64 sectores consecutivos de 512 bytes).</p>
+<p style="text-align: justify;"><strong>VFAT (Virtual FAT)</strong></p>
+<p style="text-align: justify;">Este sistema de archivos logra remediar uno de los mayores problemas del sistema FAT: los nombres de archivos y directorios sólo podían contener 8 caracteres de nombre y 3 de extensión. Con VFAT, se logra ampliar este límite a 255 caracteres entre nombre y extensión.</p>
+<p style="text-align: justify;">La mayor ventaja de VFAT es que tiene plena compatibilidad con FAT. Por ejemplo, es factible utilizar la misma partición para dos sistemas operativos que utilicen uno FAT y otro VFAT (MS-DOS y Windows 95). Cuando entremos desde MS-DOS, los nombres largos de archivos se transforman en nombres cortos según unas reglas establecidas, y pueden ser utilizados de la manera habitual. De todas maneras, hay que prestar cierta atención cuando se trabaja desde MS-DOS con archivos que tienen nombres largos: no se deben realizar operaciones de copiado o borrado, ya que se corre el riesgo de perder el nombre largo del archivo y quedarnos sólo con el corto. Desde Windows 95, se trabaja de forma transparente con nombres cortos y largos.</p>
+<p style="text-align: justify;">Tanto las particiones FAT como las VFAT están limitadas a un tamaño máximo de 2 GB. Esta es la razón por la que los discos duros mayores de este tamaño que vayan a trabajar con alguno de los dos sistemas, necesiten ser particionados en varias particiones más pequeñas. El sistema de archivos FAT32 ha sido diseñado para aumentar este límite a 2 TB (1 terabyte = 1024 GB).</p>
+<p style="text-align: justify;"><strong>FAT32 (FAT de 32 bits)</strong></p>
+<p style="text-align: justify;">El sistema FAT32 permite trabajar con particiones mayores de 2 GB. No solamente esto, sino que además el tamaño del grupo (clúster) es mucho menor y no se desperdicia tanto espacio como ocurría en las particiones FAT. La conversión de FAT a FAT32, se puede realizar desde el propio</p>
+<p style="text-align: justify;">Hay que tener en cuenta que ni MS-DOS ni las primeras versiones de Windows 95 pueden acceder a los datos almacenados en una partición FAT32. Esto quiere decir que si tenemos en la misma partición instalados MS-DOS y Windows 98, al realizar la conversión a FAT32 perderemos la posibilidad de arrancar en MS-DOS (opción "Versión anterior de MS-DOS" del menú de arranque de Windows 98). Con una conversión inversa se puede recuperar esta opción. Por estos motivos de incompatibilidades, no es conveniente utilizar este sistema de archivos en particiones que contengan datos que deban ser visibles desde otros sistemas de archivos. En los demás casos, suele ser la opción más recomendable.</p>
+<p style="text-align: justify;">En la siguiente tabla, se comparan los tamaños de grupo utilizados según el tamaño de la partición y el sistema de archivos empleado:</p>
+<p style="text-align: justify;">  <img src="img0.5.png" width="376" height="303" alt="table" /></p>
+<p style="text-align: justify;"><strong> NTFS (New Technology File System, sistema de archivos de nueva tecnología)</strong></p>
+<p style="text-align: justify;">Este es el sistema de archivos que permite utilizar todas las características de seguridad y protección de archivos de Windows. NTFS sólo es recomendable para particiones superiores a 400 MB, ya que las estructuras del sistema consumen gran cantidad de espacio. NTFS permite definir el tamaño del grupo (clúster), a partir de 512 bytes (tamaño de un sector) de forma independiente al tamaño de la partición.</p>
+<p style="text-align: justify;">Las técnicas utilizadas para evitar la fragmentación y el menor desaprovechamiento del disco, hacen de este sistema de archivos el sistema ideal para las particiones de gran tamaño requeridas en grandes ordenadores y servidores.</p>
+<p style="text-align: justify;"><strong>HPFS (High Performance File System, sistema de archivos de alto rendimiento)</strong></p>
+<p style="text-align: justify;">HPFS es el sistema de archivos propio de OS/2. Utiliza una estructura muy eficiente para organizar los datos en las particiones.</p>
+<p style="text-align: justify;">HPFS no utiliza grupos sino directamente sectores del disco (que equivalen a un grupo de 512 bytes).  En vez de utilizar una tabla FAT al principio de la partición, emplea unas bandas distribuidas eficazmente por toda la partición.</p>
+<p style="text-align: justify;">De esta forma se consigue, suprimir el elevado número de movimientos que los cabezales de lectura/escritura tienen que realizar a la tabla de asignación en una partición FAT.</p>
+<p style="text-align: justify;">El resultado de este sistema es una mayor velocidad de acceso y un menor desaprovechamiento del espacio en disco.</p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="sistemas_de_direccionamiento_que_se_utilizan_los_discos_duros.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="almacenamiento_y_recuperacin_de_datos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="my_js.js"></script></body></html>
